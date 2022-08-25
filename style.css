@@ -1,0 +1,569 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.item1 {
+    grid-area: h;
+}
+
+.item2 {
+    grid-area: m;
+}
+
+.item3 {
+    grid-area: c;
+}
+
+.item4 {
+    grid-area: a;
+}
+
+.item5 {
+    grid-area: f;
+}
+
+.continer {
+    display: grid;
+    grid-template-areas:
+        'h h h h h h h h h h h h'
+        'm m m m m m c a a a a a'
+        'f f f f f f f f f f f f'
+    ;
+}
+
+.continer>div {
+    border: 1px solid black;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+.item1 {
+    background-color: rgb(115, 81, 118);
+    height: 90px;
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+
+}
+
+.item2 {
+    height: 600px;
+    background-color: azure;
+    position: sticky;
+    top: 90px;
+   
+}
+
+.item3 {
+    background-color: rgb(163, 118, 165);
+    height: 1100px;
+}
+
+.item4 {
+    background-color: azure;
+    height: 600px;
+    position: sticky;
+    top:90px;
+}
+
+.item5 {
+    background-color: rgb(115, 81, 118);
+    height: 100px;
+}
+
+.logo {
+    position: absolute;
+    top: 16px;
+    left: 60px;
+
+}
+
+.logo h2 {
+    font-size: 40px;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: Dynapuff;
+
+}
+
+span {
+    color: rgb(7, 7, 124);
+}
+
+.menu-bar {
+    position: absolute;
+    top: 23px;
+    left: 300px;
+    display: block;
+
+}
+
+.menu-bar ul {
+    list-style: none;
+}
+
+.menu-bar ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-bar ul li {
+    margin: 0px 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    float: left;
+    font-family: Dynapuff;
+}
+
+.menu-bar ul li a:hover {
+    color: rgb(8, 8, 69);
+}
+
+.search-bar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    height: 40px;
+
+}
+
+.search-text {
+    border: none;
+    background: none;
+    outline: none;
+    margin-left: 10px;
+    line-height: 35px;
+    color: white;
+    font-size: 20px;
+    font-family: Dynapuff;
+    width: 250px;
+
+
+}
+
+.search-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+}
+
+.search-text::placeholder {
+    color: white;
+}
+
+.search-bar:hover {
+    border: 1px solid white;
+    border-radius: 15px;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 1px black;
+}
+
+.service {
+    position: absolute;
+    top: 170px;
+    left: 680px;
+}
+
+.service h2 {
+    font-size: 35px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Dynapuff;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.box>div {
+    width: 200px;
+    height: 260px;
+    margin: 170px 10px;
+    border-radius: 15px;
+    background-color: rgb(134, 120, 134);
+    transform: 2s;
+    transition: all 1s;
+    border: 1px solid black;
+}
+
+.border1 h4 {
+    margin: 10px 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-family: Dynapuff;
+
+}
+
+.border1 h4:hover {
+    color: rgb(8, 8, 63);
+
+}
+
+.border1 p {
+    font-size: 15px;
+    text-transform: capitalize;
+    color: rgb(6, 6, 6);
+    margin: 25px 0px;
+    font-family: Dynapuff;
+}
+
+.border1 button {
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 4px;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: black;
+    font-family: Dynapuff;
+    margin: 10px 0px;
+    cursor: pointer;
+    box-shadow: -2px 2px 5px black;
+}
+
+.box>div button :hover {
+    background-color: transparent;
+}
+
+.border2 h3 {
+    margin: 10px 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-family: Dynapuff;
+
+}
+
+.border2 h3:hover {
+    color: rgb(8, 8, 63);
+
+}
+
+.border2 p {
+    font-size: 15px;
+    text-transform: capitalize;
+    color: rgb(6, 6, 6);
+    margin: 25px 0px;
+    font-family: Dynapuff;
+}
+
+.border2 button {
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 4px;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: black;
+    font-family: Dynapuff;
+    margin: 10px 0px;
+    cursor: pointer;
+    box-shadow: -2px 2px 5px black;
+
+}
+
+
+.border3 h2 {
+    margin: 10px 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-family: Dynapuff;
+
+}
+
+.border3 h2:hover {
+    color: rgb(8, 8, 63);
+
+}
+
+.border3 p {
+    font-size: 15px;
+    text-transform: capitalize;
+    color: rgb(6, 6, 6);
+    margin: 25px 0px;
+    font-family: Dynapuff;
+}
+
+.border3 button {
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 4px;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: black;
+    font-family: Dynapuff;
+    margin: 10px 0px;
+    cursor: pointer;
+    box-shadow: -2px 2px 5px black;
+}
+
+
+.border4 h2 {
+    margin: 10px 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-family: Dynapuff;
+
+}
+
+.border4 h2:hover {
+    color: rgb(8, 8, 63);
+
+}
+
+.border4 p {
+    font-size: 15px;
+    text-transform: capitalize;
+    color: rgb(6, 6, 6);
+    margin: 25px 0px;
+    font-family: Dynapuff;
+}
+
+.border4 button {
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 4px;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: black;
+    font-family: Dynapuff;
+    margin: 10px 0px;
+    cursor: pointer;
+    box-shadow: -2px 2px 5px black;
+}
+
+
+.border5 h2 {
+    margin: 10px 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-family: Dynapuff;
+
+}
+
+.border5 h2:hover {
+    color: rgb(8, 8, 63);
+
+}
+
+.border5 p {
+    font-size: 15px;
+    text-transform: capitalize;
+    color: rgb(6, 6, 6);
+    margin: 25px 0px;
+    font-family: Dynapuff;
+}
+
+.border5 button {
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 4px;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: black;
+    font-family: Dynapuff;
+    margin: 10px 0px;
+    cursor: pointer;
+    box-shadow: -2px 2px 5px black;
+}
+
+
+.box>div:hover {
+    box-shadow: -2px 2px 5px black;
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+
+.product {
+    position: absolute;
+    top: 600px;
+    left: 680px;
+
+}
+
+.product h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    color: white;
+    font-family: Dynapuff;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo>div {
+    border: 1px solid black;
+    background-color: rgb(134, 120, 134);
+    width: 200px;
+    height: 270px;
+    margin: 70px 10px;
+    border-radius: 15px;
+    transform: 2s;
+    transition: all 1s;
+
+}
+
+.photo>div:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: -2px 2px 5px black;
+}
+
+.photo>div img {
+    width: 100%;
+    height: 65%;
+    border-radius: 15px;
+
+}
+
+.photo-box p {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: Dynapuff;
+    color: white;
+    margin: 7px 0px;
+}
+
+.photo-box button {
+    margin: 8px 0px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: Dynapuff;
+    border-radius: 10px;
+    box-shadow: -2px 2px 5px black;
+}
+
+.contact a {
+    text-decoration: none;
+    font-size: 40px;
+    margin-top: 20px;
+    color: white;
+}
+
+.contact h2 {
+    font-size: 20px;
+    margin: 10px;
+}
+.menu-bar11{
+    position: absolute;
+    top:10px;
+    left: 20px;
+}
+.menu-bar11 .menu11{
+    color: black;
+    font-size: 30px;
+}
+.menu11:hover .border-menu{
+    display: block;
+}
+.border-menu{
+    align-items: left;
+    
+}
+.ony1{
+    position: relative;
+    padding: 5px 0px;
+    width: 100px;
+    height:30px;
+    background-color: rgb(93, 121, 121);
+    margin-left: 10px;
+    margin-top: 10px;
+}.ony2{
+    position: relative;
+    padding: 5px 0px;
+    width: 100px;
+    height:30px;
+    background-color: rgb(93, 121, 121);
+    margin-left: 10px;
+    margin-top: 10px;
+    
+}.ony3{
+    position: relative;
+    padding: 5px 0px;
+    width: 100px;
+    height:30px;
+    background-color: rgb(93, 121, 121);
+    margin-left: 10px;
+    margin-top: 10px;
+}.ony4{
+    position: relative;
+    padding: 5px 0px;
+    width: 100px;
+    height:30px;
+    background-color: rgb(93, 121, 121);
+    margin-left: 10px;
+    margin-top: 10px;
+}.ony5{
+    position: relative;
+    padding: 5px 0px;
+    width: 100px;
+    height:30px;
+    background-color: rgb(93, 121, 121);
+    margin-left: 10px;
+    margin-top: 10px;
+    
+}.ony6{
+    position: relative;
+    padding: 5px 0px;
+    width: 100px;
+    height:30px;
+    background-color: rgb(93, 121, 121);
+    margin-left: 10px;
+    margin-top: 10px;
+}.ony7{
+    position: relative;
+    padding: 5px 0px;
+    width: 100px;
+    height:30px;
+    background-color: rgb(93, 121, 121);
+    margin-left: 10px;
+    margin-top: 10px;
+}.ony8{
+    position: relative;
+    padding: 5px 0px;
+    width: 100px;
+    height:30px;
+    background-color: rgb(93, 121, 121);
+    margin-left: 10px;
+    margin-top: 10px;
+    
+}.ony9{
+    position: relative;
+    padding: 5px 0px;
+    width: 100px;
+    height:30px;
+    background-color: rgb(93, 121, 121);
+    margin-left: 10px;
+    margin-top: 10px;
+}
